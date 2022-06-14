@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Mono", monospace;
+}
+
+body {
+    color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    background-color: #1c1c1c;
+    background-color: #5f35fd;
+    background-image: linear-gradient(43deg, #202020 0%, #181818a6 46%, #202020 100%);
+    
+}
+
+#container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#título {
+    margin-bottom: 40px;
+    font-size: 30px;
+    color: aliceblue;
+}
+
+#container_secundario {
+    width: 700px;
+    padding: 30px 50px;
+    background-color: #141414;
+    border-radius: 25px;
+    -webkit-box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.58);
+    -moz-box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.58);
+    box-shadow: 10px 10px 40px -3px rgba(0,0,0,0.58);
+    transition: 0.5s;
+    animation: ease-in;
+}
+
+#container_input {
+    width: 100%;
+    display: flex;
+    margin-bottom: 50px;
+    position: 50px;
+    position: relative;
+}
+
+#container_input::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    border-top: 2px solid aliceblue;
+    margin-top: 70px;
+    height: 10px;
+}
+
+#container_inputtxt {
+    outline: none;
+    border: none;
+    background-color: #1e1e1e;
+    font-size: 15px;
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    border-radius: 8px;
+}
+
+#container_inputtxt::placeholder {
+    color: aliceblue;
+    opacity: 0.5;
+    padding: 1%;
+}
+
+#container_btn {
+    width: 20%;
+    outline: none;
+    border: none;
+    background-color: #5f35fd;
+    border-radius: 8px;
+    color: aliceblue;
+    font-size: 15px;
+    margin-left: 5px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+}
+
+#container_btn:hover {
+    background-color: #4618eb;
+}
+
+#container_palavra {
+    color: #5f35fd;
+    font-size: 25px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+#container_significado {
+    color: aliceblue;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+span {
+    font-size: 20px;
+    color: #5f35fd;
+}
+
+#container_inputtxt {
+    color: aliceblue;
+}
+
+#container_result {
+    transition: 0.5s;
+}
